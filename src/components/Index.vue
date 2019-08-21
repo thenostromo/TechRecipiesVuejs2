@@ -17,7 +17,7 @@
         </h2>
       </div>
       <span class="btn-floating btn-large halfway-fab pink">
-        <router-link :to="{ name: 'EditRecipe', params: { recipe_slug: recipe.slug }}">
+        <router-link :to="{ name: 'EditRecipe', params: { 'recipe_slug': recipe.slug }}">
           <i class="material-icons edit">edit</i>
         </router-link>
       </span>
