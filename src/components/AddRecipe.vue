@@ -84,10 +84,13 @@
             remove: /[$*_+~.()'"!\-:@]/g,
             lower: true
           })
+          if (this.keyword) {
+            this.recipe.keywords.push(this.keyword)
+          }
           this.$store.commit('addRecipe', {
-              title: this.title,
-              keywords: this.keywords,
-              slug: this.slug
+            title: this.title,
+            keywords: this.keywords,
+            slug: this.slug
           })
           this.$router.push({ name: 'Index' })
         } else {

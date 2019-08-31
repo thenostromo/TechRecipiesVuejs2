@@ -108,15 +108,15 @@
           var findRecipe = null
           var resultRecipies = [];
           this.$store.getters.getRecipies.forEach(recipe => {
-              findRecipe = recipe
-              if (recipe.slug === findSlug) {
-                  findRecipe = {
-                      title: this.recipe.title,
-                      keywords: this.recipe.keywords,
-                      slug: this.recipe.slug
-                  }
+            findRecipe = recipe
+            if (recipe.slug === findSlug) {
+              findRecipe = {
+                title: this.recipe.title,
+                keywords: this.recipe.keywords,
+                slug: this.recipe.slug
               }
-              resultRecipies.push(findRecipe)
+            }
+            resultRecipies.push(findRecipe)
           })
           this.$store.commit('setRecipies', resultRecipies)
           this.$router.push({ name: 'Index' })
