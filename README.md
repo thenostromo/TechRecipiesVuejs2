@@ -1,4 +1,12 @@
 # tech-recipies
+A simple task manager on the topic of "IT".
+Technical Kit:
++ VUEJS;
++ VUEX;
++ FIREBASE;
++ MATERIALIZE CSS;
+
+Demo: http://136.243.142.144:8002
 
 > A Vue.js project
 
