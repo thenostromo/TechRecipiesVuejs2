@@ -85,7 +85,7 @@
             lower: true
           })
           if (this.keyword) {
-            this.recipe.keywords.push(this.keyword)
+            this.keywords.push(this.keyword)
           }
           this.$store.commit('addRecipe', {
             title: this.title,
